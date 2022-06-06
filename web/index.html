@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link type="text/css" href="css/normalize.css" rel="stylesheet">
+        <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+        <!--<link type="text/css" href="css/bootstrap.css" rel="stylesheet">-->
+        <link type="text/css" href="css/estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="contenedor" class="container" >
+            <div id="portada" class="row">
+                <div class="col-12">
+                    <img id="imagen_portada" src="imagenes/fotoPortada.jpg"/>
+                </div>
+            </div>
+            <div id="titulo" class="row  justify-content-center aling-content-center">
+                 <h1>Gestión de Calidad</h1>
+            </div>
+            <div id="loggin" class="row">
+                <div class="col-2"></div>
+                <div class="col-8"> 
+                    <form id="formulario_loggin" class="" action="index.php?comando=loggin" method="post">
+                        <label>Usuario </label>
+                        <input type="email" class="input_loggin" name="email_usuario" placeholder="usuario@gmail.com" 
+                               >
+                        <br>
+                        <label>Password</label>
+                        <input type="password" class="input_loggin" name="password_usuario" placeholder="*********" >
+                        <br>
+                        <div class="form-check para_check">
+                        <p class="form-check-label">Recordarme en este equipo</p>
+                        <input type="checkbox" class="form-check-input" id="cookie" name="cookie"/>
+                        </div>
+                        <br>
+                        <br>
+                        <input type="submit" id="iniciar" name="iniciar" value="Iniciar Sesion" >
+                    </form>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </body>
+</html>
